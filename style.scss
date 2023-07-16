@@ -1,0 +1,680 @@
+@import 'variaveis';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #110229;
+    margin: 0;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30rem;
+        background-image: url("/src/fundo-cabecalho.png");
+        background-size: cover;
+        background-position: center;
+
+        .cabecalho__img__titulo {
+            width: 40%;
+            height: auto;
+            margin-top: 9rem
+
+        }
+
+        .cabecalho__texto__descricao {
+            @include texto($cor-secundaria, 2rem);
+            width: 52%;
+            text-align: center;
+        }
+    }
+
+    .sessao__livro {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        align-items: center;
+
+        .sessao__livro__img__capa {
+            width: 40%;
+            height: auto;
+        }
+
+        .sessao__livro__descricao {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 2rem;
+
+            .sessao__livro__texto__titulo {
+                @include texto($cor-primaria, 2rem);
+                margin: 0;
+            }
+
+            .sessao__livro__texto__autor {
+                @include texto($cor-secundaria, 1rem);
+                margin: 0;
+            }
+
+            .sessao__livro__img__classificacao {
+                width: 8rem;
+            }
+
+            .sessao__livro__texto__descricao {
+                @include texto($cor-secundaria, 1rem);
+                margin: 1rem 0 1rem 0;
+            }
+
+            .sessao__livro__texto__premio {
+                @include texto($cor-primaria, 1rem);
+                margin: 0;
+            }
+
+            .sessao__livro__botao__comprar {
+                margin-top: 1rem;
+                @include btn($cor-primaria, $cor-secundaria, 1rem);
+            }
+        }
+    }
+
+    .sessao__autor {
+        @extend body;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        align-items: center;
+
+        .sessao__autor__texto__titulo {
+            @include texto($cor-secundaria, 1.8rem);
+            margin: 0;
+
+            span {
+                color: $cor-primaria;
+            }
+        }
+
+        .sessao__autor__texto__autor {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0;
+
+            .sessao__autor__img__autor {
+                width: 50%;
+                height: auto;
+                border-radius: 50%;
+                transform: scale(0.7);
+
+            }
+
+            .sessao__autor__texto__descricao {
+                @include texto($cor-secundaria, 1rem);
+            }
+        }
+    }
+
+    .sessao__obras {
+        @extend body;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+
+        .sessao__obras__texto__titulo {
+            @include texto($cor-secundaria, 1.8rem);
+            width: 50%;
+            margin: 0;
+            text-align: center;
+
+            span {
+                color: $cor-primaria;
+            }
+        }
+
+        .sessao__obras__texto__livros {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 50%;
+            margin: 0;
+            align-items: center;
+            margin-top: 2rem;
+
+            .livro__insanity {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                margin-right: 1.5rem;
+
+                .livro__insanity__img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .livro__insanity__texto__titulo {
+                    @include texto($cor-primaria, 0.5rem);
+                    margin: 0;
+                    margin-top: 0.3rem
+                }
+
+                .livro__insanity__texto__editora {
+                    @include texto($cor-secundaria, 0.5rem);
+                    margin: 0;
+                    margin-top: 0.3rem
+                }
+
+                .livro__insanity__texto__ano {
+                    @include texto($cor-secundaria, 0.5rem);
+                    margin: 0;
+                    margin-top: 0.3rem
+                }
+
+            }
+
+            .livro__transtorn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                margin-left: 1.5rem;
+
+                .livro__transtorn__img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .livro__transtorn__texto__titulo {
+                    @include texto($cor-primaria, 0.5rem);
+                    margin: 0;
+                    margin-top: 0.3rem
+                }
+
+                .livro__transtorn__texto__editora {
+                    @include texto($cor-secundaria, 0.5rem);
+                    margin: 0;
+                    margin-top: 0.3rem
+                }
+
+                .livro__transtorn__texto__ano {
+                    @include texto($cor-secundaria, 0.5rem);
+                    margin: 0;
+                    margin-top: 0.3rem
+                }
+            }
+        }
+
+    }
+
+    .sessao__midia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .sessao__midia__texto__titulo {
+            @include texto($cor-secundaria, 1.8rem);
+            margin: 0;
+            text-align: center;
+
+            span {
+                color: $cor-primaria;
+            }
+
+        }
+
+        .sessao__midia__img__noticia {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 1.5rem;
+
+            .sessao__midia__img__noticia__transtorn {
+                width: 50%;
+                margin-right: 1.5rem;
+            }
+
+            .sessao__midia__img__noticia__insanity {
+                width: 50%;
+                margin-left: 1.5rem;
+            }
+
+        }
+    }
+
+    .sessao__depoimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .sessao__depoimentos__texto__titulo {
+            @include texto($cor-secundaria, 1.8rem);
+            margin: 0;
+            text-align: center;
+           
+            span {
+                color: $cor-primaria;
+            }
+        }
+
+        .sessao__depoimentos__texto__comentario__um {
+            display: flex;
+            flex-direction: column;
+            @include texto($cor-secundaria, 1rem);
+            margin-top: 2rem;
+
+            .sessao__depoimentos__texto__autor {
+                @include texto($cor-primaria, 1rem);
+                text-align: right;
+
+            }
+        }
+
+        .sessao__depoimentos__texto__comentario__dois {
+            display: flex;
+            flex-direction: column;
+            @include texto($cor-secundaria, 1rem);
+
+            .sessao__depoimentos__texto__autor {
+                @include texto($cor-primaria, 1rem);
+                text-align: right;
+            }
+        }
+    }
+
+    .sessao__valores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .sessao__valores__texto__titulo {
+            @include texto($cor-secundaria, 1.8rem);
+            margin: 0;
+            text-align: center;
+            color: $cor-compra;
+
+        }
+
+        .sessao__valores__texto__apresentacao {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 3rem;
+
+            .sessao__valores__texto__apresentacao__img {
+                width: 40%;
+                height: auto;
+                margin-right: 1rem;
+            }
+
+            .sessao__valores__texto__apresentacao__descricao {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                height: auto;
+                margin-left: 1rem;
+
+                .sessao__valores__texto__apresentacao__descricao__titulo {
+                    @include texto($cor-primaria, 2rem);
+                    margin: 0;
+                }
+
+                .sessao__valores__texto__apresentacao__descricao__autor {
+                    @include texto($cor-secundaria, 1rem);
+                    margin: 0
+                }
+
+                .sessao__valores__texto__apresentacao__descricao__classificacao {
+                    width: 5rem;
+                    margin: 0.5rem 0 0 0;
+                }
+
+                .sessao__valores__texto__apresentacao__descricao__premio {
+                    @include texto($cor-primaria, 1rem); 
+                    margin: 0; 
+                }
+
+                .sessao__valores__texto__apresentacao__descricao__valor {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1rem 0 0 0;
+
+                    .sessao__valores__texto__apresentacao__descricao__valor__anterior {
+                        @include texto($cor-primaria, 1rem);
+                        margin: 0;
+                    }
+
+                    .sessao__valores__texto__apresentacao__descricao__valor__atual {
+                        display: flex;
+                        flex-direction: row;
+                        margin: 0;
+
+                        .sessao__valores__texto__apresentacao__descricao__valor__cifrao {
+                            @include texto($cor-primaria, 1rem);
+                            margin: 0;
+                        }
+
+                        .sessao__valores__texto__apresentacao__descricao__valor__promocao {
+                            @include texto($cor-primaria, 2rem);
+                            font-weight: 600;
+                            margin: 0;
+                        }
+
+                        .sessao__valores__texto__apresentacao__descricao__valor__promocao__centavos {
+                            @include texto($cor-primaria, 1rem);
+                            margin: 0;
+                        }
+
+                    }
+
+                }
+
+                .sessao__valores__texto__apresentacao__descricao__botao {
+                    margin-top: 2rem;
+                    @include btn($cor-primaria, $cor-secundaria, 1rem);
+                }  
+            }
+        }
+    
+    }
+
+}
+
+@media (max-width: 413px) {
+    
+    body {
+    
+        header {
+            justify-content: space-around;
+            height: 50rem;
+    
+            .cabecalho__img__titulo {
+                width: 90%;
+                height: auto;
+                margin-top: 9rem
+    
+            }
+    
+            .cabecalho__texto__descricao {
+                @include texto($cor-secundaria, 1.3rem);
+                width: 70%;
+            }
+        }
+    
+        .sessao__livro {
+            flex-direction: row;
+            width: 90%;
+            height: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            align-items: center;
+            justify-content: space-around;
+    
+            .sessao__livro__img__capa {
+                width: 30%;
+                height: auto;
+            }
+    
+            .sessao__livro__descricao {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+    
+                .sessao__livro__texto__titulo {
+                    @include texto($cor-primaria, 0.9rem);
+                    margin: 0;
+                }
+    
+                .sessao__livro__texto__autor {
+                    @include texto($cor-secundaria, 0.5rem);
+                    margin: 0;
+                }
+    
+                .sessao__livro__img__classificacao {
+                    width: 4rem;
+                    margin: 1rem 0 0 0 
+                }
+    
+                .sessao__livro__texto__descricao {
+                    @include texto($cor-secundaria, 0.7rem);
+                    margin: 0 0 1rem 0;
+                }
+    
+                .sessao__livro__texto__premio {
+                    @include texto($cor-primaria, 0.5rem);
+                    margin: 0;
+                }
+    
+                .sessao__livro__botao__comprar {
+                    @include btn($cor-primaria, $cor-secundaria, 0.5rem);
+                    width: 8rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+    
+        .sessao__autor {
+            @extend body;
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            align-items: center;
+    
+            .sessao__autor__texto__titulo {
+                @include texto($cor-secundaria, 1rem);
+                margin: 0;
+            }
+    
+            .sessao__autor__texto__autor {
+                justify-content: space-around;
+    
+                .sessao__autor__img__autor {    
+                    transform: scale(0.6);
+    
+                }
+    
+                .sessao__autor__texto__descricao {
+                    @include texto($cor-secundaria, 0.7rem);
+                }
+            }
+        }
+    
+        .sessao__obras {
+            width: 90%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+    
+            .sessao__obras__texto__titulo {
+                @include texto($cor-secundaria, 1rem);
+            }
+    
+            .sessao__obras__texto__livros {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 80%;
+            }
+    
+        }
+    
+        .sessao__midia {
+            width: 80%;
+            height: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+    
+            .sessao__midia__texto__titulo {
+                @include texto($cor-secundaria, 1rem);
+            }
+    
+            .sessao__midia__img__noticia {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                margin-top: 1.5rem;
+    
+                .sessao__midia__img__noticia__transtorn {
+                    width: 90%;
+                    margin: 0 0 1rem 0;
+                }
+    
+                .sessao__midia__img__noticia__insanity {
+                    width: 90%;
+                    margin: 0;
+                }
+    
+            }
+        }
+    
+        .sessao__depoimentos {
+            width: 70%;
+            height: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+    
+            .sessao__depoimentos__texto__titulo {
+                @include texto($cor-secundaria, 1rem);
+            }
+    
+            .sessao__depoimentos__texto__comentario__um {
+                @include texto($cor-secundaria, 0.7rem);
+                margin-top: 1.5rem;
+    
+                .sessao__depoimentos__texto__autor {
+                    @include texto($cor-primaria, 0.6rem);
+    
+                }
+            }
+    
+            .sessao__depoimentos__texto__comentario__dois {
+                @include texto($cor-secundaria, 0.7rem);
+    
+                .sessao__depoimentos__texto__autor {
+                    @include texto($cor-primaria, 0.6rem);
+                    text-align: right;
+                }
+            }
+        }
+    
+        .sessao__valores {
+            width: 80%;
+            height: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+    
+            .sessao__valores__texto__titulo {
+                @include texto($cor-secundaria, 1rem);
+                color: $cor-compra;
+    
+            }
+    
+            .sessao__valores__texto__apresentacao {
+    
+                .sessao__valores__texto__apresentacao__img {
+                    margin-right: 1rem;
+                }
+    
+                .sessao__valores__texto__apresentacao__descricao {
+                    margin-left: 1rem;
+    
+                    .sessao__valores__texto__apresentacao__descricao__titulo {
+                        @include texto($cor-primaria, 0.8rem);
+                    }
+    
+                    .sessao__valores__texto__apresentacao__descricao__autor {
+                        @include texto($cor-secundaria, 0.5rem);
+                    }
+    
+                    .sessao__valores__texto__apresentacao__descricao__classificacao {
+                        width: 4rem;
+                        margin: 0.5rem 0 0 0;
+                    }
+    
+                    .sessao__valores__texto__apresentacao__descricao__premio {
+                        @include texto($cor-primaria, 0.6rem); 
+
+                    }
+    
+                    .sessao__valores__texto__apresentacao__descricao__valor {
+
+    
+                        .sessao__valores__texto__apresentacao__descricao__valor__anterior {
+                            @include texto($cor-primaria, 0.8rem);
+
+                        }
+    
+                        .sessao__valores__texto__apresentacao__descricao__valor__atual {
+
+    
+                            .sessao__valores__texto__apresentacao__descricao__valor__cifrao {
+                                @include texto($cor-primaria, 0.8rem);
+                                margin: 0;
+                            }
+    
+                            .sessao__valores__texto__apresentacao__descricao__valor__promocao {
+                                @include texto($cor-primaria, 1.5rem);
+                                font-weight: 500;
+                            }
+    
+                            .sessao__valores__texto__apresentacao__descricao__valor__promocao__centavos {
+                                @include texto($cor-primaria, 0.8rem);
+                                margin: 0;
+                            }
+    
+                        }
+    
+                    }
+    
+                    .sessao__valores__texto__apresentacao__descricao__botao {
+                        margin-top: 1.5rem;
+                        @include btn($cor-primaria, $cor-secundaria, 0.5rem);
+                        width: 8rem;
+                        height: 1.5rem;
+                    }  
+                }
+            }
+        
+        }
+    
+    }
+
+    /* Estilos para telas menores ou iguais a 768px de largura */
+  }

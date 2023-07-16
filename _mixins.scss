@@ -1,0 +1,15 @@
+@mixin texto ($cor, $tamanho) {
+    color: $cor;
+    font-size: $tamanho;
+    font-family: $fonte-principal;
+}
+
+@mixin btn ($cor-fundo, $cor-texto, $tamanho) {
+    background-color: $cor-fundo;
+    color: $cor-texto;
+    font-size: $tamanho;
+    font-family: $fonte-principal;
+    border-radius: 15px;
+    width: 14rem;
+    height: 2rem;
+}

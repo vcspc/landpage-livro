@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body, body .sessao__obras, body .sessao__autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #110229;
+  margin: 0;
+}
+body header, body .sessao__obras header, body .sessao__autor header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30rem;
+  background-image: url("/src/fundo-cabecalho.png");
+  background-size: cover;
+  background-position: center;
+}
+body header .cabecalho__img__titulo {
+  width: 40%;
+  height: auto;
+  margin-top: 9rem;
+}
+body header .cabecalho__texto__descricao {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  width: 52%;
+  text-align: center;
+}
+body .sessao__livro {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+body .sessao__livro .sessao__livro__img__capa {
+  width: 40%;
+  height: auto;
+}
+body .sessao__livro .sessao__livro__descricao {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__titulo {
+  color: #FC7B23;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__autor {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__livro .sessao__livro__descricao .sessao__livro__img__classificacao {
+  width: 8rem;
+}
+body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__descricao {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0 1rem 0;
+}
+body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__premio {
+  color: #FC7B23;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__livro .sessao__livro__descricao .sessao__livro__botao__comprar {
+  margin-top: 1rem;
+  background-color: #FC7B23;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  width: 14rem;
+  height: 2rem;
+}
+body .sessao__autor {
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+body .sessao__autor .sessao__autor__texto__titulo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__autor .sessao__autor__texto__titulo span {
+  color: #FC7B23;
+}
+body .sessao__autor .sessao__autor__texto__autor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+body .sessao__autor .sessao__autor__texto__autor .sessao__autor__img__autor {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+body .sessao__autor .sessao__autor__texto__autor .sessao__autor__texto__descricao {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+body .sessao__obras {
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+body .sessao__obras .sessao__obras__texto__titulo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  margin: 0;
+  text-align: center;
+}
+body .sessao__obras .sessao__obras__texto__titulo span {
+  color: #FC7B23;
+}
+body .sessao__obras .sessao__obras__texto__livros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin: 0;
+  align-items: center;
+  margin-top: 2rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__insanity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-right: 1.5rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__insanity .livro__insanity__img {
+  width: 100%;
+  height: auto;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__insanity .livro__insanity__texto__titulo {
+  color: #FC7B23;
+  font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-top: 0.3rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__insanity .livro__insanity__texto__editora {
+  color: #fff;
+  font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-top: 0.3rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__insanity .livro__insanity__texto__ano {
+  color: #fff;
+  font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-top: 0.3rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__transtorn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: 1.5rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__transtorn .livro__transtorn__img {
+  width: 100%;
+  height: auto;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__transtorn .livro__transtorn__texto__titulo {
+  color: #FC7B23;
+  font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-top: 0.3rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__transtorn .livro__transtorn__texto__editora {
+  color: #fff;
+  font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-top: 0.3rem;
+}
+body .sessao__obras .sessao__obras__texto__livros .livro__transtorn .livro__transtorn__texto__ano {
+  color: #fff;
+  font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-top: 0.3rem;
+}
+body .sessao__midia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body .sessao__midia .sessao__midia__texto__titulo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+body .sessao__midia .sessao__midia__texto__titulo span {
+  color: #FC7B23;
+}
+body .sessao__midia .sessao__midia__img__noticia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+body .sessao__midia .sessao__midia__img__noticia .sessao__midia__img__noticia__transtorn {
+  width: 50%;
+  margin-right: 1.5rem;
+}
+body .sessao__midia .sessao__midia__img__noticia .sessao__midia__img__noticia__insanity {
+  width: 50%;
+  margin-left: 1.5rem;
+}
+body .sessao__depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body .sessao__depoimentos .sessao__depoimentos__texto__titulo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+body .sessao__depoimentos .sessao__depoimentos__texto__titulo span {
+  color: #FC7B23;
+}
+body .sessao__depoimentos .sessao__depoimentos__texto__comentario__um {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
+}
+body .sessao__depoimentos .sessao__depoimentos__texto__comentario__um .sessao__depoimentos__texto__autor {
+  color: #FC7B23;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+}
+body .sessao__depoimentos .sessao__depoimentos__texto__comentario__dois {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+body .sessao__depoimentos .sessao__depoimentos__texto__comentario__dois .sessao__depoimentos__texto__autor {
+  color: #FC7B23;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+}
+body .sessao__valores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body .sessao__valores .sessao__valores__texto__titulo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+  color: #EA2D63;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__img {
+  width: 40%;
+  height: auto;
+  margin-right: 1rem;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  margin-left: 1rem;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__titulo {
+  color: #FC7B23;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__autor {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__classificacao {
+  width: 5rem;
+  margin: 0.5rem 0 0 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__premio {
+  color: #FC7B23;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__anterior {
+  color: #FC7B23;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__atual {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__atual .sessao__valores__texto__apresentacao__descricao__valor__cifrao {
+  color: #FC7B23;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__atual .sessao__valores__texto__apresentacao__descricao__valor__promocao {
+  color: #FC7B23;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__atual .sessao__valores__texto__apresentacao__descricao__valor__promocao__centavos {
+  color: #FC7B23;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__botao {
+  margin-top: 2rem;
+  background-color: #FC7B23;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  width: 14rem;
+  height: 2rem;
+}
+
+@media (max-width: 413px) {
+  body header, body .sessao__autor header, body .sessao__obras header {
+    justify-content: space-around;
+    height: 50rem;
+  }
+  body header .cabecalho__img__titulo {
+    width: 90%;
+    height: auto;
+    margin-top: 9rem;
+  }
+  body header .cabecalho__texto__descricao {
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+  }
+  body .sessao__livro {
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .sessao__livro .sessao__livro__img__capa {
+    width: 30%;
+    height: auto;
+  }
+  body .sessao__livro .sessao__livro__descricao {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__titulo {
+    color: #FC7B23;
+    font-size: 0.9rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__autor {
+    color: #fff;
+    font-size: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  body .sessao__livro .sessao__livro__descricao .sessao__livro__img__classificacao {
+    width: 4rem;
+    margin: 1rem 0 0 0;
+  }
+  body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__descricao {
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 1rem 0;
+  }
+  body .sessao__livro .sessao__livro__descricao .sessao__livro__texto__premio {
+    color: #FC7B23;
+    font-size: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  body .sessao__livro .sessao__livro__descricao .sessao__livro__botao__comprar {
+    background-color: #FC7B23;
+    color: #fff;
+    font-size: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    width: 14rem;
+    height: 2rem;
+    width: 8rem;
+    height: 1.5rem;
+  }
+  body .sessao__autor {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  body .sessao__autor .sessao__autor__texto__titulo {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  body .sessao__autor .sessao__autor__texto__autor {
+    justify-content: space-around;
+  }
+  body .sessao__autor .sessao__autor__texto__autor .sessao__autor__img__autor {
+    transform: scale(0.6);
+  }
+  body .sessao__autor .sessao__autor__texto__autor .sessao__autor__texto__descricao {
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__obras {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  body .sessao__obras .sessao__obras__texto__titulo {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__obras .sessao__obras__texto__livros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+  body .sessao__midia {
+    width: 80%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  body .sessao__midia .sessao__midia__texto__titulo {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__midia .sessao__midia__img__noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  body .sessao__midia .sessao__midia__img__noticia .sessao__midia__img__noticia__transtorn {
+    width: 90%;
+    margin: 0 0 1rem 0;
+  }
+  body .sessao__midia .sessao__midia__img__noticia .sessao__midia__img__noticia__insanity {
+    width: 90%;
+    margin: 0;
+  }
+  body .sessao__depoimentos {
+    width: 70%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  body .sessao__depoimentos .sessao__depoimentos__texto__titulo {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__depoimentos .sessao__depoimentos__texto__comentario__um {
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 1.5rem;
+  }
+  body .sessao__depoimentos .sessao__depoimentos__texto__comentario__um .sessao__depoimentos__texto__autor {
+    color: #FC7B23;
+    font-size: 0.6rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__depoimentos .sessao__depoimentos__texto__comentario__dois {
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__depoimentos .sessao__depoimentos__texto__comentario__dois .sessao__depoimentos__texto__autor {
+    color: #FC7B23;
+    font-size: 0.6rem;
+    font-family: "Poppins", sans-serif;
+    text-align: right;
+  }
+  body .sessao__valores {
+    width: 80%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  body .sessao__valores .sessao__valores__texto__titulo {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #EA2D63;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__img {
+    margin-right: 1rem;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao {
+    margin-left: 1rem;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__titulo {
+    color: #FC7B23;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__autor {
+    color: #fff;
+    font-size: 0.5rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__classificacao {
+    width: 4rem;
+    margin: 0.5rem 0 0 0;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__premio {
+    color: #FC7B23;
+    font-size: 0.6rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__anterior {
+    color: #FC7B23;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__atual .sessao__valores__texto__apresentacao__descricao__valor__cifrao {
+    color: #FC7B23;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__atual .sessao__valores__texto__apresentacao__descricao__valor__promocao {
+    color: #FC7B23;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__valor .sessao__valores__texto__apresentacao__descricao__valor__atual .sessao__valores__texto__apresentacao__descricao__valor__promocao__centavos {
+    color: #FC7B23;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__texto__apresentacao__descricao .sessao__valores__texto__apresentacao__descricao__botao {
+    margin-top: 1.5rem;
+    background-color: #FC7B23;
+    color: #fff;
+    font-size: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    width: 14rem;
+    height: 2rem;
+    width: 8rem;
+    height: 1.5rem;
+  }
+  /* Estilos para telas menores ou iguais a 768px de largura */
+}
+
+/*# sourceMappingURL=style.css.map */
