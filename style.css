@@ -429,11 +429,11 @@ body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__te
     justify-content: space-around;
   }
   body .sessao__livro .sessao__livro__img__capa {
-    width: 30%;
+    width: 40%;
     height: auto;
   }
   body .sessao__livro .sessao__livro__descricao {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -493,6 +493,7 @@ body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__te
   }
   body .sessao__autor .sessao__autor__texto__autor {
     justify-content: space-around;
+    margin-top: 2rem;
   }
   body .sessao__autor .sessao__autor__texto__autor .sessao__autor__img__autor {
     transform: scale(0.6);
@@ -535,7 +536,7 @@ body .sessao__valores .sessao__valores__texto__apresentacao .sessao__valores__te
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
   body .sessao__midia .sessao__midia__img__noticia .sessao__midia__img__noticia__transtorn {
     width: 90%;
